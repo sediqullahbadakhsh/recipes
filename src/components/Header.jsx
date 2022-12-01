@@ -1,7 +1,7 @@
 import login from "../assets/Images/login.png";
 import search from "../assets/Images/search.png";
 import logo from "../assets/Images/Logo.png";
-import "./Header.css";
+import "../assets/style/Header.css";
 
 const Header = () => {
   return (
