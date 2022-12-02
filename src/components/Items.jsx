@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { itemList, filters, sorting } from "./data";
+import { itemList, filterList, sortList } from "./data";
 
 import Filters from "./Filters";
 import Recipes from "./Recipes";
@@ -12,9 +12,26 @@ import sort from "../assets/Images/sort.png";
 const Items = () => {
   const [activeFilter, setActiveFilter] = useState(false);
   const [activeSort, setActiveSort] = useState(false);
+  const [selectFilters, setSelectFilters] = useState([]);
+
+  const closeMenu = () => {
+    setActiveFilter(false);
+    setActiveSort(false);
+  };
+  const hundleUpdate = (data) => {
+    setSelectFilters((arr) => [...arr, data.value]);
+  };
+  console.log(selectFilters);
   return (
-    <div>
-      <div>دستور پخت ها</div>
+    <div className="items-page">
+      <div className="filter-options" dir="rtl">
+        فیلتر:
+        {selectFilters &&
+          selectFilters.map((filter) => {
+            return <div key={filter}>{filter}</div>;
+          })}
+      </div>
+      <div className="items-title">دستور پخت ها</div>
       <ul className="floating-button">
         <li className="sortButton" onClick={() => setActiveSort(!activeSort)}>
           <p>مرتب سازی</p>
@@ -44,7 +61,11 @@ const Items = () => {
             activeFilter ? "active" : "hidden"
           }`}
         >
-          <Filters />
+          <Filters
+            filters={filterList}
+            closeMenu={closeMenu}
+            filterOption={hundleUpdate}
+          />
         </div>
       </div>
     </div>

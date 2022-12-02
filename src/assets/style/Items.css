@@ -10,6 +10,15 @@
 .active {
   display: block;
 }
+.items-page {
+  margin-top: 15px;
+}
+.filter-options {
+  margin-bottom: 15px;
+}
+.items-title {
+  display: none;
+}
 
 /* Floating Buttons */
 
@@ -17,7 +26,7 @@
   position: fixed;
   bottom: 4%;
   left: 7%;
-  width: 420px;
+  width: 380px;
   height: 60px;
   display: flex;
   justify-content: space-around;
@@ -79,3 +88,15 @@
   display: none;
 }
 /* Recipe list end */
+
+/*Filter Menu */
+
+.filterList {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 30vh;
+  background-color: red;
+  padding-right: 29px;
+}

@@ -138,7 +138,7 @@ export const itemList = [
   },
 ];
 
-export const filters = [
+export const filterList = [
   {
     name: "دسته بندی غذایی",
     types: [
@@ -181,7 +181,7 @@ export const filters = [
   },
 ];
 
-export const sorting = [
+export const sortList = [
   { id: 1, name: "جدیدترین" },
   { id: 2, ame: "یمی ترین" },
   { id: 3, ame: "بوب ترین" },
