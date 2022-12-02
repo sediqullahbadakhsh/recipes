@@ -12,6 +12,7 @@ import sort from "../assets/Images/sort.png";
 const Items = () => {
   const [activeFilter, setActiveFilter] = useState(false);
   const [activeSort, setActiveSort] = useState(false);
+
   const [selectFilters, setSelectFilters] = useState([]);
 
   const closeMenu = () => {
@@ -20,6 +21,13 @@ const Items = () => {
   };
   const hundleUpdate = (data) => {
     setSelectFilters((arr) => [...arr, data.value]);
+    selectFilters.map((item) => {
+      if (item === data.value) {
+        setSelectFilters((arr) =>
+          arr.filter((recipe) => recipe !== data.value)
+        );
+      }
+    });
   };
   console.log(selectFilters);
   return (
@@ -50,7 +58,7 @@ const Items = () => {
       <div className="container">
         <div className="main-container">
           <div className={`sort-container ${activeSort ? "active" : "hidden"}`}>
-            <Sorts />
+            <Sorts sortList={sortList} closeMenu={closeMenu} />
           </div>
           <div className={`recipe-container `}>
             <Recipes recipes={itemList} />
