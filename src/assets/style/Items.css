@@ -11,6 +11,8 @@
   display: block;
 }
 
+/* Floating Buttons */
+
 .floating-button {
   position: fixed;
   bottom: 4%;
@@ -42,3 +44,38 @@
   width: 8px;
   border-radius: 8px;
 }
+
+/* Floating button end */
+
+/* Recipe list */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+
+.card {
+  width: 200px;
+  box-shadow: 0 0 2px 0;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card > img {
+  width: 190px;
+}
+.desc {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+}
+
+.recipeKeywords {
+  display: none;
+}
+/* Recipe list end */
