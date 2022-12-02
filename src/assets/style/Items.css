@@ -10,3 +10,35 @@
 .active {
   display: block;
 }
+
+.floating-button {
+  position: fixed;
+  bottom: 4%;
+  left: 7%;
+  width: 420px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 0 0 4px 0;
+  background-color: #fff;
+}
+
+.floating-button > .vector {
+  font-size: 35px;
+}
+.floating-button > .sortButton,
+.filterButton {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.circle {
+  background-color: #b0bf24;
+  height: 8px;
+  width: 8px;
+  border-radius: 8px;
+}

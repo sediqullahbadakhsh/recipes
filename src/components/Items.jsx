@@ -1,9 +1,13 @@
 import { useState } from "react";
+import { itemList, filters, sorting } from "./data";
 
 import Filters from "./Filters";
 import Recipes from "./Recipes";
 import Sorts from "./Sorts";
+
 import "../assets/style/Items.css";
+import setting from "../assets/Images/setting-5.png";
+import sort from "../assets/Images/sort.png";
 
 const Items = () => {
   const [activeFilter, setActiveFilter] = useState(false);
@@ -11,9 +15,20 @@ const Items = () => {
   return (
     <div>
       <div>دستور پخت ها</div>
-      <ul>
-        <li onClick={() => setActiveSort(!activeSort)}>مرتب سازی</li>
-        <li onClick={() => setActiveFilter(!activeFilter)}>فلتر ها</li>
+      <ul className="floating-button">
+        <li className="sortButton" onClick={() => setActiveSort(!activeSort)}>
+          <p>مرتب سازی</p>
+          <img src={sort} alt="sort" />
+        </li>
+        <li className="vector">|</li>
+        <li
+          className="filterButton"
+          onClick={() => setActiveFilter(!activeFilter)}
+        >
+          <span className="circle"></span>
+          <p>فیلتر ها</p>
+          <img src={setting} alt="filter" />
+        </li>
       </ul>
       <div className="container">
         <div className="main-container">
@@ -21,7 +36,7 @@ const Items = () => {
             <Sorts />
           </div>
           <div className={`recipe-container `}>
-            <Recipes />
+            <Recipes recipes={itemList} />
           </div>
         </div>
         <div

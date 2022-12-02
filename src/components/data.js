@@ -2,8 +2,7 @@ import image from "../assets/Images/image.jpg";
 export const itemList = [
   {
     id: 1,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -11,8 +10,7 @@ export const itemList = [
   },
   {
     id: 2,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -20,8 +18,7 @@ export const itemList = [
   },
   {
     id: 3,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -29,8 +26,7 @@ export const itemList = [
   },
   {
     id: 4,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -38,8 +34,7 @@ export const itemList = [
   },
   {
     id: 5,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -47,8 +42,7 @@ export const itemList = [
   },
   {
     id: 6,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -56,8 +50,7 @@ export const itemList = [
   },
   {
     id: 7,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -65,8 +58,7 @@ export const itemList = [
   },
   {
     id: 8,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -74,8 +66,7 @@ export const itemList = [
   },
   {
     id: 9,
-
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -83,7 +74,7 @@ export const itemList = [
   },
   {
     id: 10,
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -91,7 +82,7 @@ export const itemList = [
   },
   {
     id: 11,
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -99,7 +90,7 @@ export const itemList = [
   },
   {
     id: 12,
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -107,7 +98,7 @@ export const itemList = [
   },
   {
     id: 13,
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -115,7 +106,7 @@ export const itemList = [
   },
   {
     id: 14,
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -123,7 +114,7 @@ export const itemList = [
   },
   {
     id: 15,
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -131,7 +122,7 @@ export const itemList = [
   },
   {
     id: 16,
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
@@ -139,10 +130,60 @@ export const itemList = [
   },
   {
     id: 17,
-    image: { image },
+    image: image,
     name: "پاستا بادمجان",
     time: "20 الی 25 دقیقه",
     keywords: ["گیاهی", "پاستا", "گیلکی"],
     rating: "4.5(25+)",
   },
+];
+
+export const filters = [
+  {
+    name: "دسته بندی غذایی",
+    types: [
+      "خوارک گوشت",
+      "خوارک حبوبات",
+      "چوجه کباب",
+      " بورانی",
+      "پیش غذا,",
+      "کوفته - کبه",
+      "دسر",
+      "کیک",
+      "دریایی",
+      "آش",
+      "سوپ",
+      "خورشت",
+      "کباب",
+      "پاستا",
+      "گراتن",
+      "پیتزا",
+    ],
+  },
+  {
+    name: "روش پخت",
+    types: [
+      "جوشاندن",
+      "باربکیو یا منقل",
+      "آرام پز",
+      "مخلوط کردن",
+      "تف دادن",
+      "گریل کردن",
+      "پخت با فر",
+      "دم کردن",
+      "بخاریز",
+      "سرخ کردن",
+    ],
+  },
+  {
+    name: "مزه",
+    types: ["ادویه ای", "ملس", "ترش", "نرمال"],
+  },
+];
+
+export const sorting = [
+  { id: 1, name: "جدیدترین" },
+  { id: 2, ame: "یمی ترین" },
+  { id: 3, ame: "بوب ترین" },
+  { id: 4, ame: "یگان" },
 ];
