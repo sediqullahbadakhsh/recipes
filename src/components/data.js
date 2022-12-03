@@ -180,7 +180,7 @@ export const filterList = [
 
 export const sortList = [
   { id: 1, name: "جدیدترین" },
-  { id: 2, ame: "یمی ترین" },
-  { id: 3, ame: "بوب ترین" },
-  { id: 4, ame: "یگان" },
+  { id: 2, name: "یمی ترین" },
+  { id: 3, name: "بوب ترین" },
+  { id: 4, name: "یگان" },
 ];

@@ -7,3 +7,13 @@ html {
 body {
   margin: 10px 15px;
 }
+
+.hidden {
+  display: none;
+}
+.active {
+  display: block;
+}
+.desktopMenu {
+  display: none;
+}

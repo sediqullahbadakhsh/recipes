@@ -3,13 +3,6 @@
   flex-direction: column;
   justify-content: right;
 }
-
-.hidden {
-  display: none;
-}
-.active {
-  display: block;
-}
 .items-page {
   margin-top: 15px;
 }
@@ -143,4 +136,11 @@
 }
 .filter-option > input {
   margin-left: 10px;
+}
+.sort-categories {
+  width: 110vw;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: flex-end;
 }

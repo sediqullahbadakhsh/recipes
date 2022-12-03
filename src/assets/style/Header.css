@@ -1,33 +1,31 @@
 .header-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-areas:
+    "subscription logo menuBtn"
+    "signup search search ";
+  justify-content: start;
   align-items: center;
   align-content: center;
+  justify-items: center;
+  grid-template-columns: 100px 180px 50px;
+  gap: 20px;
 }
-.left,
-.right {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.left {
-  flex-direction: column;
-}
-.right {
-  flex-direction: column-reverse;
-}
+
 .subscription {
   background-color: #f69427;
   color: #fff;
   border: none;
-  padding: 10px 8px;
+  padding: 8px;
   border-radius: 5px;
   cursor: pointer;
+  order: 1;
 }
 .signup {
   display: flex;
   gap: 2px;
   cursor: pointer;
+  width: 100px;
+  order: 4;
 }
 
 .search {
@@ -35,19 +33,26 @@
   border: solid 1px rgb(177, 177, 177);
   border-radius: 5px;
   padding: 3px;
-  width: 350px;
+  width: 250px;
   justify-content: right;
+  order: 5;
+  justify-self: start;
 }
 .search > input {
   text-align: right;
   margin-right: 2px;
   border: none;
-  width: 320px;
+  width: 250px;
 }
 .search > input:focus {
   outline: none;
 }
 .logo {
-  margin-right: 110px;
   cursor: pointer;
+  order: 2;
+}
+.menuBtn {
+  width: 35px;
+  order: 3;
+  justify-self: end;
 }
