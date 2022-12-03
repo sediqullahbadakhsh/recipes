@@ -1,34 +1,33 @@
-import { useState } from "react";
+import close from "../assets/Images/close-square.png";
+import Accordion from "./Accordion";
 
 const Filters = ({ filters, closeMenu, filterOption }) => {
-  const [data, setData] = useState("");
-
   const hundleClick = (e) => {
-    setData(e.target);
     filterOption(e.target);
   };
+
   return (
-    <div className="filterList" dir="rtl">
-      <div onClick={closeMenu}>close</div>
-      <p>فیلتر</p>
-      <p>حذف فیلتر</p>
+    <div className="floatingWindow" dir="rtl">
+      <div className="topModal">
+        <div onClick={closeMenu}>
+          <img src={close} alt="close btn" />
+        </div>
+        <p>فیلتر</p>
+        <p>حذف فیلتر</p>
+      </div>
       {filters.map((filter) => {
         return (
-          <div key={filter.name}>
-            <div>{filter.name}</div>
-            <div>
-              {filter.types.map((type) => {
-                return (
-                  <label key={type}>
-                    <input type="checkbox" onClick={hundleClick} value={type} />
-                    {type}
-                  </label>
-                );
-              })}
-            </div>
-          </div>
+          <Accordion
+            name={filter.name}
+            types={filter.types}
+            hundleClick={hundleClick}
+            key={filter.name}
+          />
         );
       })}
+      <div onClick={closeMenu} className="modal-button">
+        اعمال
+      </div>
     </div>
   );
 };

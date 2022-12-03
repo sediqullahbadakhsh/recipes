@@ -65,7 +65,7 @@
 }
 
 .card {
-  width: 200px;
+  width: 190px;
   box-shadow: 0 0 2px 0;
   display: flex;
   gap: 5px;
@@ -76,7 +76,7 @@
 }
 
 .card > img {
-  width: 190px;
+  width: 180px;
 }
 .desc {
   display: flex;
@@ -90,13 +90,57 @@
 /* Recipe list end */
 
 /*Filter Menu */
-
-.filterList {
+.floatingWindow {
   position: fixed;
   top: 0;
   left: 0;
+  min-width: 100vw;
+  min-height: 120vh;
+  background-color: #fff;
+}
+.topModal {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: solid 2px #acacac;
+  height: 40px;
+}
+
+.modal-button {
+  position: fixed;
+  bottom: 4%;
+  left: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 4px 0;
+  background-color: #fff;
+  background-color: #b0bf24;
+  color: #fff;
+  border-radius: 10px;
+  width: 360px;
+  height: 40px;
+}
+.filter-groups {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+.filter-group {
+  font-weight: 900;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
   width: 100vw;
-  height: 30vh;
-  background-color: red;
-  padding-right: 29px;
+}
+.filter-option > input {
+  margin-left: 10px;
 }
