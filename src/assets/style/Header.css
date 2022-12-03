@@ -56,3 +56,12 @@
   order: 3;
   justify-self: end;
 }
+
+.mobileMenu {
+  position: absolute;
+  top: 6%;
+  width: 110vw;
+  height: 110vh;
+  background-color: #fff;
+  z-index: 9999;
+}

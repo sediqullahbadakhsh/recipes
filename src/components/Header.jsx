@@ -26,7 +26,7 @@ const Header = ({ hundleClick }) => {
         src={menu}
         alt="menu"
       />
-      <div className={active ? "active" : "hidden"}>
+      <div dir="rtl" className={active ? "active mobileMenu" : "hidden"}>
         <Navbar />
       </div>
     </div>

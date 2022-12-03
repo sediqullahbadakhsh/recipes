@@ -1,7 +1,9 @@
-ul {
-  list-style: none;
+.navbar {
   display: flex;
-  justify-content: right;
-  gap: 25px;
-  margin-top: 5px;
+  flex-direction: column;
+  padding-right: 60px;
+  gap: 10px;
+  font-weight: 900;
+  list-style-type: none;
+  padding-top: 40px;
 }
