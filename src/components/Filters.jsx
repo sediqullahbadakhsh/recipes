@@ -10,7 +10,7 @@ const Filters = ({ filters, closeMenu, filterOption }) => {
     <div className="floatingWindow" dir="rtl">
       <div className="topModal">
         <div onClick={closeMenu}>
-          <img src={close} alt="close btn" />
+          <img src={close} alt="close btn" className="close-btn" />
         </div>
         <p>فیلتر</p>
         <p>حذف فیلتر</p>

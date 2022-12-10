@@ -29,16 +29,8 @@ const Items = () => {
       }
     });
   };
-  console.log(selectFilters);
   return (
     <div className="items-page">
-      <div className="filter-options" dir="rtl">
-        فیلتر:
-        {selectFilters &&
-          selectFilters.map((filter) => {
-            return <div key={filter}>{filter}</div>;
-          })}
-      </div>
       <div className="items-title">دستور پخت ها</div>
       <ul className="floating-button">
         <li className="sortButton" onClick={() => setActiveSort(!activeSort)}>
@@ -55,19 +47,17 @@ const Items = () => {
           <img src={setting} alt="filter" />
         </li>
       </ul>
-      <div className="container">
+      <div className="desktop-main">
         <div className="main-container">
           <div className={`sort-container ${activeSort ? "active" : "hidden"}`}>
             <Sorts sortList={sortList} closeMenu={closeMenu} />
           </div>
-          <div className={`recipe-container `}>
-            <Recipes recipes={itemList} />
+          <div className="recipe-container">
+            <Recipes recipes={itemList} filterData={selectFilters} />
           </div>
         </div>
         <div
-          className={`filter-container hidden ${
-            activeFilter ? "active" : "hidden"
-          }`}
+          className={`filter-container ${activeFilter ? "active" : "hidden"}`}
         >
           <Filters
             filters={filterList}

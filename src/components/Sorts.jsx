@@ -2,7 +2,7 @@ import close from "../assets/Images/close-square.png";
 
 const Sorts = ({ sortList, closeMenu }) => {
   return (
-    <div className="floatingWindow">
+    <div className="floatingWindow sort-container">
       <div className="topModal" dir="rtl">
         <div onClick={closeMenu}>
           <img src={close} alt="close btn" />

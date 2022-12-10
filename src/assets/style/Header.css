@@ -65,3 +65,34 @@
   background-color: #fff;
   z-index: 9999;
 }
+
+@media screen and (min-width: 450px) {
+  .header-container {
+    display: grid;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: 100px auto auto 100px;
+    gap: 1px;
+  }
+
+  .subscription {
+    order: 1;
+  }
+  .signup {
+    order: 2;
+    margin-left: -50vw;
+  }
+
+  .search {
+    order: 3;
+    margin-right: -60vw;
+  }
+
+  .logo {
+    order: 4;
+  }
+  .menuBtn {
+    display: none;
+  }
+}

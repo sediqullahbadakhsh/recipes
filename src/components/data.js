@@ -181,6 +181,6 @@ export const filterList = [
 export const sortList = [
   { id: 1, name: "جدیدترین" },
   { id: 2, name: "یمی ترین" },
-  { id: 3, name: "بوب ترین" },
+  { id: 3, name: "محبوب ترین" },
   { id: 4, name: "یگان" },
 ];
